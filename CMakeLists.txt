@@ -1,3 +1,16 @@
-project (cpp_sandbox)
+project (CppExamples)
 
 add_executable (auto auto.cpp)
+add_executable (cplusplus cplusplus.cpp)
+add_executable (fn fn.cpp)
+add_executable (future future.cpp)
+add_executable (iterators iterators.cpp)
+add_executable (mem_fn mem_fn.cpp)
+add_executable (pointers pointers.cpp)
+add_executable (range range.cpp)
+add_executable (rawstring rawstring.cpp)
+add_executable (ss ss.cpp)
+add_executable (tags tags.cpp)
+add_executable (template template.cpp)
+
+add_definitions (-std=c++11)
