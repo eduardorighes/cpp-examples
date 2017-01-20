@@ -12,5 +12,6 @@ add_executable (rawstring rawstring.cpp)
 add_executable (ss ss.cpp)
 add_executable (tags tags.cpp)
 add_executable (template template.cpp)
+add_executable (readfile readfile.cpp)
 
-add_definitions (-std=c++11)
+add_definitions (-O3 -std=c++11)
