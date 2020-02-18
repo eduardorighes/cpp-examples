@@ -15,3 +15,6 @@ add_executable (template template.cpp)
 add_executable (readfile readfile.cpp)
 
 add_definitions (-O3 -std=c++11)
+
+target_link_libraries(future pthread)
+
