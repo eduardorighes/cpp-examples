@@ -57,6 +57,7 @@ bool ConnectFn(bool* pbRelease, char** ppstrConn, char* pstrPrior)
 {
 	*pbRelease = true;
 	*ppstrConn = new char[5];	
+	return true;
 }
 
 void DisconnectFn(char* pstrConn, bool bRelease)
@@ -72,6 +73,5 @@ int main()
 	DatabaseConnWrapperC wrapper(ConnectFn, DisconnectFn);
 	wrapper.GetConn();
 
-	string s(nullptr);
 	return 0;
 }
